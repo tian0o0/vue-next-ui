@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-import Button from './button';
-import { App } from 'vue';
+import Button from "./button";
+import { App } from "vue";
 
 declare global {
   interface Window {
@@ -17,7 +17,7 @@ const install = (app: App) => {
   });
 };
 
-if (typeof window !== 'undefined' && window.app) {
+if (typeof window !== "undefined" && window.app) {
   install(window.app);
 }
 
