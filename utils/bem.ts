@@ -37,8 +37,8 @@ function prefix(name: string, mods: Mods): Mods {
 }
 
 export function createBEM(name: string) {
-  name = 't-' + name;
-  // t-button
+  name = 'vn-' + name;
+  // vn-button
   return function (el?: Mods, mods?: Mods): Mods {
     if (el && typeof el !== 'string') {
       mods = el;

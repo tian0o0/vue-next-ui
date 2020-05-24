@@ -1,4 +1,6 @@
 .cache
 .storybook
 dist
+es
+lib
 node_modules

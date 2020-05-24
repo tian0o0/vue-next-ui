@@ -1,6 +1,6 @@
 @import '../../styles/var';
 
-.t-button {
+.vn-button {
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -73,19 +73,19 @@
   &--plain {
     background-color: @button-plain-background-color;
 
-    &.t-button--primary {
+    &.vn-button--primary {
       color: @button-primary-background-color;
     }
 
-    &.t-button--info {
+    &.vn-button--info {
       color: @button-info-background-color;
     }
 
-    &.t-button--danger {
+    &.vn-button--danger {
       color: @button-danger-background-color;
     }
 
-    &.t-button--warning {
+    &.vn-button--warning {
       color: @button-warning-background-color;
     }
   }
@@ -121,7 +121,7 @@
     font-size: @button-mini-font-size;
     line-height: @button-mini-line-height;
 
-    & + .t-button--mini {
+    & + .vn-button--mini {
       margin-left: 5px;
     }
   }
@@ -165,11 +165,11 @@
       border-radius: @button-border-radius * 2;
     }
 
-    &.t-button--round::after {
+    &.vn-button--round::after {
       border-radius: @button-round-border-radius;
     }
 
-    &.t-button--square::after {
+    &.vn-button--square::after {
       border-radius: 0;
     }
   }
