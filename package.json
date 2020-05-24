@@ -1,6 +1,6 @@
 {
   "name": "vue-next-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "rm -rf .cache && parcel examples/index.html",
     "build": "rm -rf dist npx rollup -c",
