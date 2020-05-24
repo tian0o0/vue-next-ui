@@ -1,10 +1,10 @@
 // import { ButtonProps } from './type'
-import { defineComponent, h } from 'vue';
-import { createBEM } from '../../utils/bem';
+import { defineComponent, h } from "vue";
+import { createBEM } from "../../utils/bem";
 
-export type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger';
+export type ButtonType = "default" | "primary" | "info" | "warning" | "danger";
 
-export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
+export type ButtonSize = "large" | "normal" | "small" | "mini";
 
 export type ButtonProps = {
   type?: ButtonType;
@@ -24,16 +24,16 @@ export type ButtonProps = {
 };
 
 const buttonProps = {
-  type: { type: String, default: 'default' },
-  size: { type: String, default: 'normal' },
+  type: { type: String, default: "default" },
+  size: { type: String, default: "normal" },
   text: String,
   loading: { type: Boolean, default: false },
   disabled: { type: Boolean, default: false },
-  icon: { type: String, default: '' },
+  icon: { type: String, default: "" },
 } as any;
 
 export default defineComponent<ButtonProps>({
-  name: 'TButton',
+  name: "TButton",
   props: buttonProps,
   setup: (props, { slots, attrs }) => () => {
     const {
@@ -53,7 +53,7 @@ export default defineComponent<ButtonProps>({
       color,
     } = props;
 
-    const bem = createBEM('button');
+    const bem = createBEM("button");
     const classes = [
       bem([
         type,
@@ -68,10 +68,10 @@ export default defineComponent<ButtonProps>({
           ripple: ripple && !disabled && !loading,
         },
       ]),
-      { '-hairline--surround': hairline },
+      { "-hairline--surround": hairline },
     ];
     return h(
-      'button',
+      "button",
       {
         style: attrs.style,
         class: classes,
