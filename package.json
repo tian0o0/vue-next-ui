@@ -1,11 +1,10 @@
 {
   "name": "vue-next-ui",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "dev": "rm -rf .cache && parcel examples/index.html",
     "build": "rm -rf dist npx rollup -c",
-    "lint": "prettier --write  \"packages/**/*.ts?(x)\" \"example/**/*.ts?(x)\"",
+    "lint": "prettier --write  \"src/**/*.ts?(x)\" \"examples/**/*.ts?(x)\"",
     "commit": "git-cz",
     "release": "release-it",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
@@ -26,9 +25,12 @@
     "commitizen": "^4.1.2",
     "conventional-changelog-cli": "^2.0.34",
     "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5",
     "less": "^3.11.1",
     "less-loader": "^6.1.0",
+    "lint-staged": "^10.2.6",
     "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5",
     "release-it": "^13.6.1",
     "ts-loader": "^7.0.4",
     "typescript": "^3.7.4",
