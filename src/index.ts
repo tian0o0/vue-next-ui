@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-import Button from "./button";
-import { App } from "vue";
+import VNButton from './button';
+import { App } from 'vue';
 
 declare global {
   interface Window {
@@ -9,19 +9,19 @@ declare global {
   }
 }
 
-const components: any[] = [Button];
+const components: any[] = [VNButton];
 
 const install = (app: App) => {
-  components.forEach((Component) => {
-    app.component(Component.name, Component);
+  components.forEach((c) => {
+    app.component(c.name, c);
   });
 };
 
-if (typeof window !== "undefined" && window.app) {
-  install(window.app);
-}
+// if (typeof window !== 'undefined' && window.app) {
+//   install(window.app);
+// }
 
-export { install, Button };
+export { install, VNButton };
 
 export default {
   install,

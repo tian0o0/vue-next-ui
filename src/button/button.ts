@@ -1,10 +1,10 @@
-import { defineComponent, h, VNode } from "vue";
-import { createBEM } from "../../utils/bem";
-import { WHITE } from "../../utils/color";
+import { defineComponent, h, VNode } from 'vue';
+import { createBEM } from '../../utils/bem';
+import { WHITE } from '../../utils/color';
 
-export type ButtonType = "default" | "primary" | "info" | "warning" | "danger";
+export type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger';
 
-export type ButtonSize = "large" | "normal" | "small" | "mini";
+export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
 
 export type ButtonProps = {
   type?: ButtonType;
@@ -24,9 +24,9 @@ export type ButtonProps = {
 };
 
 const buttonProps = {
-  type: { type: String, default: "primary" },
-  size: { type: String, default: "normal" },
-  text: { type: String, default: "" },
+  type: { type: String, default: 'primary' },
+  size: { type: String, default: 'normal' },
+  text: { type: String, default: '' },
   // icon: { type: String, default: '' },
   block: { type: Boolean, default: false },
   plain: { type: Boolean, default: false },
@@ -35,15 +35,15 @@ const buttonProps = {
   loading: { type: Boolean, default: false },
   hairline: { type: Boolean, default: false },
   disabled: { type: Boolean, default: false },
-  loadingText: { type: String, default: "加载中..." },
+  loadingText: { type: String, default: '加载中...' },
   ripple: { type: Boolean, default: false },
-  color: { type: String, default: "" },
+  color: { type: String, default: '' },
 } as any;
 
 export default defineComponent<ButtonProps>({
-  name: "TButton",
+  name: 'VNButton',
   props: buttonProps,
-  emits: ["click"],
+  emits: ['click'],
   setup: (props, { slots, attrs, emit }) => () => {
     const {
       type,
@@ -73,14 +73,14 @@ export default defineComponent<ButtonProps>({
         style.background = color;
       }
       // hide border when color is linear-gradient
-      if (color.indexOf("gradient") !== -1) {
+      if (color.indexOf('gradient') !== -1) {
         style.border = 0;
       } else {
         style.borderColor = color;
       }
     }
 
-    const bem = createBEM("button");
+    const bem = createBEM('button');
     const classes = [
       bem([
         type,
@@ -95,12 +95,12 @@ export default defineComponent<ButtonProps>({
           ripple: ripple && !disabled && !loading,
         },
       ]),
-      { "vn-hairline--surround": hairline },
+      { 'vn-hairline--surround': hairline },
     ];
 
     function onClick(event: Event): void {
       if (!loading && !disabled) {
-        emit("click", event);
+        emit('click', event);
       }
     }
 
@@ -114,14 +114,14 @@ export default defineComponent<ButtonProps>({
       }
 
       if (_text) {
-        content.push(h("span", { class: bem("text") }, _text));
+        content.push(h('span', { class: bem('text') }, _text));
       }
 
       return content;
     }
 
     return h(
-      "button",
+      'button',
       {
         style: style,
         class: classes,

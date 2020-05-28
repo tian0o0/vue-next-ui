@@ -1,17 +1,17 @@
-import { h } from "vue";
-import Button from "../src/button";
-
+import { h } from 'vue';
+import Button from '../src/button';
+import { VNButton } from '../es';
 export default () => {
   return h(
-    Button,
+    VNButton as any,
     {
-      color: "linear-gradient(to right, #4bb0ff, #6149f6)",
+      color: 'linear-gradient(to right, #4bb0ff, #6149f6)',
       ripple: true,
       onClick: (data) => {
         console.log(data);
       },
-      style: { color: "black" },
+      style: { color: 'black' },
     },
-    () => "按钮"
+    () => '按钮'
   );
 };

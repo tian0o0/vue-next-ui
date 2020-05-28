@@ -1,5 +1,7 @@
 .cache
 .storybook
+.DS_Store
+.vscode
 dist
 es
 lib

@@ -21,6 +21,7 @@
   ],
   "scripts": {
     "dev": "rm -rf .cache && parcel examples/index.html",
+    "examples:build": "",
     "build": "rm -rf es && npx rollup -c",
     "lint": "prettier --write  \"src/**/*.ts?(x)\" \"examples/**/*.ts?(x)\"",
     "commit": "git-cz",
@@ -63,6 +64,7 @@
     "rollup-plugin-typescript2": "^0.27.1",
     "ts-loader": "^7.0.4",
     "typescript": "^3.7.4",
+    "vite": "^0.16.10",
     "vue": "^3.0.0-beta.14",
     "vue-loader": "^16.0.0-beta.2"
   },
