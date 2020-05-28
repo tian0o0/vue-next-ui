@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-import VNButton from './button';
-import { App } from 'vue';
+import VNButton from "./button";
+import { App } from "vue";
 
 declare global {
   interface Window {

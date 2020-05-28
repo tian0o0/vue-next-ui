@@ -1,5 +1,5 @@
 import { h } from 'vue';
-import Button from '../src/button';
+// import Button from "../src/button";
 import { VNButton } from '../es';
 export default () => {
   return h(
