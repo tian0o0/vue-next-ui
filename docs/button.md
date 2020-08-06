@@ -3,7 +3,7 @@
 ### Install
 
 ```javascript
-import { Button } from 'xpre';
+import { Button } from 'vue-next-ui';
 
 Vue.use(Button);
 ```
@@ -13,23 +13,23 @@ Vue.use(Button);
 ### Type
 
 ```html
-<x-button type="default">Default</x-button>
-<x-button type="primary">Primary</x-button>
-<x-button type="info">Info</x-button>
-<x-button type="danger">Danger</x-button>
-<x-button type="warning">Warning</x-button>
+<vn-button type="default">Default</vn-button>
+<vn-button type="primary">Primary</vn-button>
+<vn-button type="info">Info</vn-button>
+<vn-button type="danger">Danger</vn-button>
+<vn-button type="warning">Warning</vn-button>
 ```
 
 ### Ripple
 
 ```html
-<x-button type="primary" ripple>Primary</x-button>
+<vn-button type="primary" ripple>Primary</vn-button>
 ```
 
 ### Raised :sparkles:
 
 ```html
-<x-button type="primary" raised>Raised</x-button>
+<vn-button type="primary" raised>Raised</vn-button>
 ```
 
 > Not working when set `plain`
@@ -37,58 +37,58 @@ Vue.use(Button);
 ### Plain
 
 ```html
-<x-button plain type="primary">Primary</x-button>
-<x-button plain type="danger">Danger</x-button>
+<vn-button plain type="primary">Primary</vn-button>
+<vn-button plain type="danger">Danger</vn-button>
 ```
 
 ### Hairline
 
 ```html
-<x-button plain hairline type="primary">Hairline</x-button>
-<x-button plain hairline type="danger">Hairline</x-button>
+<vn-button plain hairline type="primary">Hairline</vn-button>
+<vn-button plain hairline type="danger">Hairline</vn-button>
 ```
 
 ### Disabled
 
 ```html
-<x-button disabled type="primary">Diabled</x-button>
-<x-button disabled type="danger">Diabled</x-button>
+<vn-button disabled type="primary">Diabled</vn-button>
+<vn-button disabled type="danger">Diabled</vn-button>
 ```
 
 ### Loading
 
 ```html
-<x-button loading type="primary" />
-<x-button loading type="primary" loading-type="spinner" />
-<x-button loading type="danger" loading-text="Loading..." />
+<vn-button loading type="primary" />
+<vn-button loading type="primary" loading-type="spinner" />
+<vn-button loading type="danger" loading-text="Loading..." />
 ```
 
 ### Shape
 
 ```html
-<x-button square type="primary">Square</x-button>
-<x-button round type="danger">Round</x-button>
+<vn-button square type="primary">Square</vn-button>
+<vn-button round type="danger">Round</vn-button>
 ```
 
 ### Icon
 
 ```html
-<x-button icon="star-o" type="primary" />
-<x-button icon="star-o" type="primary">Button</x-button>
-<x-button
+<vn-button icon="star-o" type="primary" />
+<vn-button icon="star-o" type="primary">Button</vn-button>
+<vn-button
   icon="https://ae01.alicdn.com/kf/Hfa3f8503c37e4da7862d831690178610h.png"
   type="danger"
-  >Button</x-button
+  >Button</vn-button
 >
 ```
 
 ### Size
 
 ```html
-<x-button type="primary" size="large">Large</x-button>
-<x-button type="primary" size="normal">Normal</x-button>
-<x-button type="primary" size="small">Small</x-button>
-<x-button type="primary" size="mini">Mini</x-button>
+<vn-button type="primary" size="large">Large</vn-button>
+<vn-button type="primary" size="normal">Normal</vn-button>
+<vn-button type="primary" size="small">Small</vn-button>
+<vn-button type="primary" size="mini">Mini</vn-button>
 ```
 
 ## API
@@ -120,7 +120,6 @@ Vue.use(Button);
 
 ### Events
 
-| Event      | Description                                             | Arguments         |
-| ---------- | ------------------------------------------------------- | ----------------- |
-| click      | Triggered when click button and not disabled or loading | event: Event      |
-| touchstart | Triggered when touch start                              | event: TouchEvent |
+| Event | Description                                             | Arguments    |
+| ----- | ------------------------------------------------------- | ------------ |
+| click | Triggered when click button and not disabled or loading | event: Event |

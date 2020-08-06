@@ -28,7 +28,9 @@ npm run commit
 
 > 打 tag、push 代码、发布 npm 包
 
-> 执行此操作前需要 `npm login`，记得设置 npm 源：npm set registry https://registry.npmjs.org
+> 执行此操作前需要 `npm login`，恢复设置 npm 源：npm set registry https://registry.npmjs.org
+
+> 需在 master 分支下操作
 
 ```sh
 npm run release
