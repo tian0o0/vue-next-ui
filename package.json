@@ -64,7 +64,7 @@
     "rollup-plugin-typescript2": "^0.27.1",
     "ts-loader": "^7.0.4",
     "typescript": "^3.7.4",
-    "vite": "^0.16.10",
+    "vite": "^2.9.13",
     "vue": "^3.0.0-beta.14",
     "vue-loader": "^16.0.0-beta.2"
   },
